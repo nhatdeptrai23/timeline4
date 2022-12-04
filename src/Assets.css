@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.assets__list{
+    width: 350px;
+    border: solid black 2px;
+    
+}
+.assets__menu{
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+   
+}
+
+.assets__img{
+    width: 200px;
+    height: 200px;
+    padding-top: 10px;
+
+}

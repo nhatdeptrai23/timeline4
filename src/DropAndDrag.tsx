@@ -9,7 +9,7 @@ function LionImage(_prop: any){
         return <Image image={image}
          draggable={true} 
          onDragEnd={(e)=>{console.log("coordinates",e.target._lastPos,"id:", e.target._id )}} 
-         />;
+         x={_prop.x} y={_prop.y}/>;
   };
 
 
@@ -19,19 +19,19 @@ const sty={
     width: "900px",
     height:"500px",
     marginTop : "3rem",
-    marginLeft: "20%"
+    // marginLeft: "30%"
 
 }
 export default function TimeLine(){
   return (
-    <div>
+    <div style={sty}>
       
-      <Stage width={900} height={500} style={sty} >
+      <Stage  width={900} height={500}>
         
         <Layer>
 
-            <LionImage link={"https://konvajs.org/assets/lion.png"}/>
-            <LionImage link={"https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-9.png"}/>
+            <LionImage link={"https://konvajs.org/assets/lion.png"} x={137} y={85} />
+            <LionImage link={"https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-9.png"} x={407} y={159} />
      
         </Layer>
       </Stage>
