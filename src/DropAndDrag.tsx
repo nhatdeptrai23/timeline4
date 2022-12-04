@@ -2,10 +2,10 @@ import React from 'react';
 import { Stage, Layer, Rect, Circle, Text, Image } from 'react-konva';
 import useImage from 'use-image';
 
-// const linkImage = ["https://konvajs.org/assets/lion.png", "/anh1.jpeg", "/logo192.png"]
-
-const LionImage = () => {     
-        const [image] = useImage("https://konvajs.org/assets/lion.png");    
+const linkImage = ["https://konvajs.org/assets/lion.png", "/anh1.jpeg", "/logo192.png"]
+// const link = "https://konvajs.org/assets/lion.png"
+function LionImage(_prop: any){     
+        const [image] = useImage(_prop.link);    
         return <Image image={image}
          draggable={true} 
          onDragEnd={(e)=>{console.log("coordinates",e.target._lastPos,"id:", e.target._id )}} 
@@ -30,10 +30,8 @@ export default function TimeLine(){
         
         <Layer>
 
-            <LionImage />
-            <LionImage/>
-            <LionImage />
-            <LionImage />
+            <LionImage link={"https://konvajs.org/assets/lion.png"}/>
+            <LionImage link={"https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/2-9.png"}/>
      
         </Layer>
       </Stage>
