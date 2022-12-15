@@ -10,7 +10,7 @@ function App() {
       <TimelineEditor />
       <div className='edit__view'>
         <TimeLine />
-        <Assets />
+        {/* <Assets /> */}
       </div>
 
     </>

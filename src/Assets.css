@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 ul li{
@@ -10,7 +11,7 @@ ul li{
 
 .assets__list{
     width: 350px;
-    border: solid black 2px;
+    border: solid grey 1px;
     
 }
 .assets__menu{
@@ -27,4 +28,18 @@ ul li{
     height: 200px;
     padding-top: 10px;
 
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+
+}
+::-webkit-scrollbar-track {
+    
+  }
+
+::-webkit-scrollbar-thumb{
+    background-color:#810CA8;
+    border-radius: 10px;
+    margin-right: 2px;
 }
